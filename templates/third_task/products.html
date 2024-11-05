@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShop - Products</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'about' %}">О нас</a></li>
+            <li><a href="{% url 'products' %}">Продукты</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 class="text-center">Наши Продукты</h1>
+        <p class="text-center">Здесь вы найдете наш выбор популярных игр и игровых аксессуаров.</p>
+
+        <div class="products-grid">
+            <div class="product">
+                <img src="{% static 'images/witcher3.jpg' %}" alt="The Witcher 3: Wild Hunt">
+                <h2>The Witcher 3: Wild Hunt</h2>
+                <p>Эпическая ролевая игра, где вы играете за ведьмака по имени Геральт, выполняя квесты, убивая монстров и исследуя огромный открытый мир.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/rdr2.jpg' %}" alt="Red Dead Redemption 2">
+                <h2>Red Dead Redemption 2</h2>
+                <p>Приключенческая игра в стиле вестерн от Rockstar Games, где вы играете за Артура Моргана, члена банды Ван дер Линде.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/cyberpunk2077.jpg' %}" alt="Cyberpunk 2077">
+                <h2>Cyberpunk 2077</h2>
+                <p>Экшен-RPG от CD Projekt, где вы играете за наемника V, исследуя город будущего Найт-Сити и выполняя миссии.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/ac_valhalla.jpg' %}" alt="Assassin's Creed Valhalla">
+                <h2>Assassin's Creed Valhalla</h2>
+                <p>Историческая приключенческая игра от Ubisoft, где вы играете за викинга по имени Эйвор и завоевываете Англию.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/last_of_us_2.jpg' %}" alt="The Last of Us Part II">
+                <h2>The Last of Us Part II</h2>
+                <p>Продолжение популярной игры от Naughty Dog, в котором вы играете за Элли, пытаясь выжить в постапокалиптическом мире.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/doom_eternal.jpg' %}" alt="DOOM Eternal">
+                <h2>DOOM Eternal</h2>
+                <p>Быстрая и яростная шутер-игра, где вы играете за Doom Slayer, уничтожая демонов и защищая Землю.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/gta_v.jpg' %}" alt="Grand Theft Auto V">
+                <h2>Grand Theft Auto V</h2>
+                <p>Популярная игра от Rockstar Games, где вы играете за трех разных персонажей, выполняя миссии и исследуя город Лос-Сантос.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/fortnite.jpg' %}" alt="Fortnite">
+                <h2>Fortnite</h2>
+                <p>Многопользовательская игра в жанре королевской битвы, где вы сражаетесь с другими игроками на острове, чтобы стать последним выжившим.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/zelda_botw.jpg' %}" alt="The Legend of Zelda: Breath of the Wild">
+                <h2>The Legend of Zelda: Breath of the Wild</h2>
+                <p>Приключенческая игра от Nintendo, где вы играете за Линка, исследуя мир Хайрул и сражаясь с врагами, чтобы спасти принцессу Зельду.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/minecraft.jpg' %}" alt="Minecraft">
+                <h2>Minecraft</h2>
+                <p>Креативная игра, где вы можете строить и исследовать бесконечные миры, добывать ресурсы и сражаться с мобами.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/fifa_21.jpg' %}" alt="FIFA 21">
+                <h2>FIFA 21</h2>
+                <p>Популярный футбольный симулятор от EA Sports, где вы можете играть за любимые команды и участвовать в турнирах.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/apex_legends.jpg' %}" alt="Apex Legends">
+                <h2>Apex Legends</h2>
+                <p>Многопользовательская игра в жанре королевской битвы от Respawn Entertainment, где вы сражаетесь с другими игроками на аренах.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/overwatch.jpg' %}" alt="Overwatch">
+                <h2>Overwatch</h2>
+                <p>Командный шутер от Blizzard Entertainment, где вы играете за различных героев с уникальными способностями.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/resident_evil_village.jpg' %}" alt="Resident Evil Village">
+                <h2>Resident Evil Village</h2>
+                <p>Ужастик от Capcom, где вы играете за Итана Уинтерса, исследуя деревню и сражаясь с врагами, чтобы спасти свою дочь.</p>
+                <button>Купить</button>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/horizon_zero_dawn.jpg' %}" alt="Horizon Zero Dawn">
+                <h2>Horizon Zero Dawn</h2>
+                <p>Приключенческая игра от Guerrilla Games, где вы играете за Элой, охотника, исследуя мир, населенный машинами и древними секретами.</p>
+                <button>Купить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
